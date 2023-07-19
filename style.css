@@ -5,20 +5,18 @@
 }
 
 body{
-    max-width: 1920px;
+    /* max-width: 1920px; */
     font-family: Work Sans;
 }
 
-/* Header style start */
 /* Navbar style start */
 .navbar{
     width:100%;
     height: 7rem;
     display: flex;
     background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05); 
 
-    
 }
 .nav-icon{
     width: 50%;
@@ -26,9 +24,6 @@ body{
     justify-content: left;
     align-items: center;
     padding-left: 240px;
-
-    /* border: 2px solid black; */
-
 }
 .nav-icon p{
     font-family: Work Sans;
@@ -45,8 +40,6 @@ body{
     justify-content: right;
     align-items: center;
     padding-right: 240px;
-
-    /* border: 2px solid black; */
 }
 .navigation ul{
     list-style: none;
@@ -66,21 +59,19 @@ body{
 .banner{
     height: 35rem;
     display: flex;
+    justify-content: space-between;
 
 }
 .contant{
     background-image: url("images/Group\ 14.png");
     padding: 150px 240px 150px 240px;
-
-    
 }
-.contant h3{
+.contant>h3{
     color: #0B0223;
     font-size: 2.725em;
     font-weight: 600;
 }
-.contant h1{
-    /* color: linear-gradient(90deg, #F948B2 0%, #8758F1 100%); */
+.contant>h1{
     color: #8758F1;
     font-size: 5.5em;
     font-weight: 800;
@@ -98,7 +89,6 @@ body{
     margin: 40px 20px 20px 0px;
     padding: 21px 40px;
     border-radius: 20px;
-   
 }
 .button1{
     background-color: #FF42A5;
@@ -107,6 +97,127 @@ body{
     background-color: #4EC5F7;
 }
 .picture{
-    width: 50%;
     padding: 20px 240px 0px 60px;
+}
+/* banner style end */
+
+
+
+/* main section */
+main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+
+/* online-game section style start */
+.online-game{
+    margin-top: 50px;
+}
+.card-contant{
+    margin: 50px auto;
+    text-align: center;    
+}
+.card-title{
+    color: #0B0223;
+    font-size: 2.725em;
+    font-weight: 700;
+    padding: 20px;
+}
+.funny-video{
+    color: #F948B2;
+}
+.card-parent{
+    display: flex;
+    gap:10px
+
+}
+.card{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+/* online-game section style end */
+
+
+/* play instantly  start*/
+.play-instantly{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.play-instantly-contant{
+    margin: 150px auto;
+    text-align: center;
+
+}
+.play-instantly-title{
+    text-align: center;
+    font-size: 2.725em;
+    font-weight: 700;
+    padding: 50px 0px;
+}
+.pic1{
+    margin-left: 100px;
+}
+.pic2{
+    position: relative;
+    bottom: 250px;
+}
+/* play instantly  close*/
+
+
+/* icon-card-section style start */
+.icon-card-section{
+    margin: 50px auto;
+}
+.section1{
+    display: grid;
+    grid-template-columns: repeat(5 ,1fr);
+    gap: 10px;
+}
+.section2{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 10px;
+    padding: 80px;
+}
+.icon-card{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px;
+}
+.icon-card:hover{
+    background-color: #FF42A5;
+    border: 2px solid black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* icon-card-section style end */
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    .navbar, .banner, .card-parent, .play-instantly{
+        flex-direction: column;
+    }
+    .nav-icon{
+        width: 100%;
+    }
+    .card-parent{
+        gap: 20px;
+    }
+    
 }
