@@ -46,12 +46,20 @@ body{
     display: flex;
 }
 .navbar ul a{
-    text-decoration: ;
+    text-decoration: none;
     color: #3C354F;
     font-size: 1.125em;
     font-weight: 500;
     padding: 0 1em; 
 }
+.Follow-us{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
 /* Navbar style End */
 
 
@@ -87,7 +95,7 @@ body{
     font-size: 1.125em;
     font-weight: 600;
     margin: 40px 20px 20px 0px;
-    padding: 21px 40px;
+    padding: 18px 40px;
     border-radius: 20px;
 }
 .button1{
@@ -129,32 +137,27 @@ main{
 }
 .card-parent{
     display: flex;
-    gap:10px
-
+    gap: 25px;
 }
 .card{
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 5px;
+    text-align: left;
 }
 /* online-game section style end */
 
 
+
 /* play instantly  start*/
 .play-instantly{
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 
 }
 .play-instantly-contant{
-    margin: 150px auto;
-    text-align: center;
+    margin: 100px auto;
+    text-align: left;
 
 }
 .play-instantly-title{
-    text-align: center;
     font-size: 2.725em;
     font-weight: 700;
     padding: 50px 0px;
@@ -203,7 +206,59 @@ main{
 
 /* icon-card-section style end */
 
+/* footer */
+/* footer style start */
+.footer{
+    background-color: #0B0223;
+    color: #FFF;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+}
 
+.footer-title{
+    padding: 120px 0px 25px 0px;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+span{
+    color: #FF42A5;
+}
+
+.icon{
+    display: flex;
+    margin: 50px auto;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.about, .Terms-Condi{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.about a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.125em;
+    padding: 2em;
+}
+.Terms-Condi a{
+    text-decoration: none;
+    color: #FF42A5;
+    font-size: 1.125em;
+    padding: 2em;
+}
+
+
+.copyrights{
+    padding: 50px 0px 50px ;
+    font-size: 1em;
+}
+
+/* footer end */
 
 
 
