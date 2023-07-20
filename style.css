@@ -15,18 +15,16 @@ body{
     width:100%;
     height: 7rem;
     display: flex;
+    justify-content: space-between;
+    padding: 0em 12em;
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05); 
-
 }
 .nav-logo{
-    width: 50%;
     display: flex;
-    justify-content: left;
     align-items: center;
-    padding-left: 240px;
 }
-.nav-logo p{
+.nav-logo .text{
     font-family: Work Sans;
     font-size: 2.5em;
     font-weight: 700;
@@ -36,11 +34,7 @@ body{
     color: #FF42A5;
 }
 .navigation{
-    width: 50%;
     display: flex;
-    justify-content: right;
-    align-items: center;
-    padding-right: 240px;
 }
 .navigation ul{
     list-style: none;
@@ -52,29 +46,29 @@ body{
     color: #3C354F;
     font-size: 1.125em;
     font-weight: 500;
-    padding: 0 1em; 
+    padding: 0em 1em; 
 }
 .Follow-us{
     display: flex;
     align-items: center;
     text-align: center;
-    gap: 10px;
-    padding: 5px;
+    padding: 0.5em 0em;
     border-radius: 10px;
     background-color: rgba(11, 2, 35, 0.10);
 }
 /* Navbar style End */
 
 
+
 /* banner style start */
 .banner{
-    height: 35rem;
     display: flex;
     justify-content: space-between;
 }
 .contant{
     background-image: url("images/Group\ 14.png");
-    padding: 150px 240px 150px 240px;
+    background-repeat: no-repeat;
+    padding: 7em 12em;
 }
 .contant>h3{
     color: #0B0223;
@@ -121,7 +115,7 @@ main{
 
 /* online-game section style start */
 .online-game{
-    margin-top: 50px;
+    margin-top: 3em;
 }
 .card-contant{
     margin: 50px auto;
@@ -131,14 +125,14 @@ main{
     color: #0B0223;
     font-size: 2.725em;
     font-weight: 700;
-    padding: 20px;
+    padding: 1.125em;
 }
 .funny-video{
     color: #F948B2;
 }
 .card-parent{
     display: flex;
-    gap: 25px;
+    gap: 1.5em;
 }
 .card{
     text-align: left;
@@ -146,22 +140,21 @@ main{
 /* online-game section style end */
 
 
-
-/* play instantly  start*/
-.play-instantly{
-    margin-top: 200px;
+/* play this game  start*/
+.play-this{
+    margin-top: 10em;
     display: flex;
 }
-.play-instantly-contant{
+.play-this-contant{
     margin: 100px auto;
     text-align: left;
 }
-.play-instantly-title{
+.play-this-title{
     font-size: 2.725em;
     font-weight: 700;
     padding: 50px 0px;
 }
-.play-instantly-title>span{
+.play-this-title>span{
     color: #FF42A5;
 }
 .pic1{
@@ -171,8 +164,7 @@ main{
     position: relative;
     bottom: 250px;
 }
-/* play instantly  close*/
-
+/* play this game  close*/
 
 
 /* icon-card-section style start */
@@ -207,8 +199,6 @@ main{
     transition: 0.5s;
 }
 /* icon-card-section style end */
-
-
 
 
 /* footer style start */
@@ -258,16 +248,108 @@ span{
 /* footer end */
 
 
+
 @media screen and (max-width: 576px) {
 
-    .navbar, .banner, .card-parent, .play-instantly{
+ /* Navbar style start */
+    .navbar{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em 0em;
+        height: min-content;
+        gap: 1em;
     }
-    .nav-icon{
-        width: 100%;
+    .nav-logo img{
+        height: 1.5em;
+    }
+    .nav-logo .text{
+        font-family: Work Sans;
+        font-size: 1.5em;
+    }
+    .navigation ul{
+        font-size: 0.75em;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    .Follow-us{
+        padding: .25em 0em;
+    }
+ /* Navbar style end */
+
+/* banner style start */
+    .banner{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contant{
+        background-size: contain;
+        padding: 1em 1em;
+        margin: 2em 2em;
+    }
+    .contant>h3{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .contant>h1{
+        font-size: 2.5em;
+        font-weight: 800;
+    }
+    .intro{
+        margin-top:1em ;
+        font-size: .75em;
+    }
+    .button1, .button2{
+        font-size: 1em;
+        border-radius: 10px;
+        border: none;
+        padding: .5em .5em;
+        margin: 1em 0em;
+    }
+    .picture img{
+        width: 50vh;
+        margin: 0em 0em;
+    }
+ /* banner style end */
+
+
+/* online-game section style start */
+    .card-title{
+        font-size: 1.75em;
+        padding: .5em;
     }
     .card-parent{
-        gap: 20px;
+        flex-direction: column;
+        margin: 0em 4.5em;
     }
-    
+    .card img{
+        width: 40vh;
+    }
+/* online-game section style end */
+
+
+/* play instantly  start*/
+    .play-this{
+        flex-direction: column;
+        justify-content: center;
+        margin:0em 2em ;
+    }
+    .play-this-title{
+        font-size: 2em;
+    }
+    .pic1 img{
+        width: 40vh;
+    }
+    .pic2 img{
+        width: 20vh;
+    }
+    .pic2{
+        bottom: 5.5em;
+        left: 3em;
+    }
+/* play instantly end*/
+
+
+
 }
